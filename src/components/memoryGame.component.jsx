@@ -100,10 +100,13 @@ const MemoryGame = () => {
       )}
 
       <div className="flex flex-col items-center justify-center min-h-screen bg-white">
-        <h1 className="text-3xl font-bold mb-6">UNO&apos;s Memory Game</h1>
+        <h1 style={{ fontSize: "6.5rem" }} className="font-bold mb-6">
+          UNO&apos;s Memory Game
+        </h1>
 
         <button
-          className="mt-4 px-4 py-2 mb-4 bg-green-500 text-white rounded hover:bg-green-600"
+          style={{ fontSize: "2.5rem" }}
+          className="mt-4 px-4 py-2 mb-7 bg-green-500 text-white rounded hover:bg-green-600"
           onClick={() => initializeGame()}
         >
           {won ? "Play Again" : "Reset"}
