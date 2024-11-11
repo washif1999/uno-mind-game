@@ -1,0 +1,762 @@
+.card {
+    width: 252px;
+    height: 362px;
+    border-radius: 20px;
+    display: inline-block;
+    position: relative;
+    font-family: Tahoma;
+}
+
+.card.green {
+    background-color: #3e9e32;
+}
+
+.card.blue {
+    background-color: #3f4cff;
+}
+
+.card.red {
+    background-color: #c11f1f;
+}
+
+.card.yellow {
+    background-color: #ded71f;
+}
+
+.card.black {
+    background-color: black;
+}
+
+.card .ellipse {
+    background-color: white;
+    margin: auto;
+    width: 176px;
+    height: 322px;
+    position: relative;
+    top: 30px;
+    border-radius: 50%;
+    transform: skewX(-25deg);
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.card .content {
+    position: absolute;
+    left: 35%;
+    top: 46%;
+    color: #3e9e32;
+    font-size: 139px;
+    font-weight: bold;
+}
+
+.card:active {
+    transform: rotateY(190deg)
+}
+
+.card .content.green {
+    color: #3e9e32;
+}
+
+.card .content.blue {
+    color: #3f4cff;
+}
+
+.card .content.red {
+    color: #c11f1f;
+}
+
+.card .content.yellow {
+    color: #ded71f;
+}
+
+.card .content.black {
+    color: black;
+}
+
+.card .content.green .skip {
+    width: 80px;
+    height: 80px;
+    border: 16px solid #3e9e32;
+    border-radius: 50%;
+    margin-top: 20%;
+}
+
+.card .content.green .skip:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 20%;
+    background-color: #3e9e32;
+    position: relative;
+    top: 40%;
+    transform: rotate(-45deg);
+}
+
+.card .content.green .plus-two {
+    /* height: 100%; */
+    position: relative;
+}
+
+.card .content.green .plus-two:before,
+.card .content.green .plus-two:after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 80px;
+    background-color: #3e9e32;
+    border-radius: 10%;
+    border: 5px solid white;
+    position: absolute;
+}
+
+.card .content.green .plus-two:before {
+    left: 35.0877193px;
+}
+
+.card .content.green .plus-two:after {
+    top: 50px;
+}
+
+.card .content.green .reverse {
+    height: 160px;
+    margin-top: -60%;
+    margin-left: 100%;
+}
+
+.card .content.green .reverse .arrows {
+    display: inline-block;
+    transform: rotate(-45deg);
+}
+
+.card .content.green .reverse .arrows .arrow {
+    width: 40px;
+    height: 40px;
+    background-color: #3e9e32;
+    position: relative;
+}
+
+.card .content.green .reverse .arrows .arrow:before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: inherit;
+    border-top-left-radius: 100%;
+    position: absolute;
+    left: -39px;
+}
+
+.card .content.green .reverse .arrows .arrow:after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    border: 40px solid #3e9e32;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-right: none;
+    position: absolute;
+    right: -39px;
+    top: -20px;
+}
+
+.card .content.green .reverse .arrows .arrow:last-child {
+    transform: rotate(180deg);
+    top: 8px;
+    right: 53.33333333px;
+}
+
+.card .content.blue .skip {
+    width: 80px;
+    height: 80px;
+    border: 16px solid #3f4cff;
+    border-radius: 50%;
+    margin-top: 20%;
+}
+
+.card .content.blue .skip:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 20%;
+    background-color: #3f4cff;
+    position: relative;
+    top: 40%;
+    transform: rotate(-45deg);
+}
+
+.card .content.blue .plus-two {
+    /* height: 100%; */
+    position: relative;
+}
+
+.card .content.blue .plus-two:before,
+.card .content.blue .plus-two:after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 80px;
+    background-color: #3f4cff;
+    border-radius: 10%;
+    border: 5px solid white;
+    position: absolute;
+}
+
+.card .content.blue .plus-two:before {
+    left: 35.0877193px;
+}
+
+.card .content.blue .plus-two:after {
+    top: 50px;
+}
+
+.card .content.blue .reverse {
+    height: 160px;
+    margin-top: -60%;
+    margin-left: 100%;
+}
+
+.card .content.blue .reverse .arrows {
+    display: inline-block;
+    transform: rotate(-45deg);
+}
+
+.card .content.blue .reverse .arrows .arrow {
+    width: 40px;
+    height: 40px;
+    background-color: #3f4cff;
+    position: relative;
+}
+
+.card .content.blue .reverse .arrows .arrow:before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: inherit;
+    border-top-left-radius: 100%;
+    position: absolute;
+    left: -39px;
+}
+
+.card .content.blue .reverse .arrows .arrow:after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    border: 40px solid #3f4cff;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-right: none;
+    position: absolute;
+    right: -39px;
+    top: -20px;
+}
+
+.card .content.blue .reverse .arrows .arrow:last-child {
+    transform: rotate(180deg);
+    top: 8px;
+    right: 53.33333333px;
+}
+
+.card .content.red .skip {
+    width: 80px;
+    height: 80px;
+    border: 16px solid #c11f1f;
+    border-radius: 50%;
+    margin-top: 20%;
+}
+
+.card .content.red .skip:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 20%;
+    background-color: #c11f1f;
+    position: relative;
+    top: 40%;
+    transform: rotate(-45deg);
+}
+
+.card .content.red .plus-two {
+    /* height: 100%; */
+    position: relative;
+}
+
+.card .content.red .plus-two:before,
+.card .content.red .plus-two:after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 80px;
+    background-color: #c11f1f;
+    border-radius: 10%;
+    border: 5px solid white;
+    position: absolute;
+}
+
+.card .content.red .plus-two:before {
+    left: 27.087719px;
+    bottom: -43px;
+}
+
+.card .content.red .plus-two:after {
+    top: -5px;
+}
+
+.card .content.red .reverse {
+    height: 160px;
+    margin-top: -60%;
+    margin-left: 100%;
+}
+
+.card .content.red .reverse .arrows {
+    display: inline-block;
+    transform: rotate(-45deg);
+}
+
+.card .content.red .reverse .arrows .arrow {
+    width: 40px;
+    height: 40px;
+    background-color: #c11f1f;
+    position: relative;
+}
+
+.card .content.red .reverse .arrows .arrow:before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: inherit;
+    border-top-left-radius: 100%;
+    position: absolute;
+    left: -39px;
+}
+
+.card .content.red .reverse .arrows .arrow:after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    border: 40px solid #c11f1f;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-right: none;
+    position: absolute;
+    right: -39px;
+    top: -20px;
+}
+
+.card .content.red .reverse .arrows .arrow:last-child {
+    transform: rotate(180deg);
+    top: 8px;
+    right: 53.33333333px;
+}
+
+.card .content.yellow .skip {
+    width: 96px;
+    height: 95px;
+    border: 16px solid #ded71f;
+    border-radius: 50%;
+    margin-top: -25%;
+}
+
+.card .content.yellow .skip:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 20%;
+    background-color: #ded71f;
+    position: relative;
+    top: 40%;
+    transform: rotate(-45deg);
+}
+
+.card .content.yellow .plus-two {
+    /* height: 100%; */
+    position: relative;
+}
+
+.card .content.yellow .plus-two:before,
+.card .content.yellow .plus-two:after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 80px;
+    background-color: #ded71f;
+    border-radius: 10%;
+    border: 5px solid white;
+    position: absolute;
+}
+
+.card .content.yellow .plus-two:before {
+    left: 27.087719px;
+    bottom: -43px;
+}
+
+.card .content.yellow .plus-two:after {
+    top: -5px;
+}
+
+.card .content.yellow .reverse {
+    height: 160px;
+    margin-top: -60%;
+    margin-left: 100%;
+}
+
+.card .content.yellow .reverse .arrows {
+    display: inline-block;
+    transform: rotate(-45deg);
+}
+
+.card .content.yellow .reverse .arrows .arrow {
+    width: 40px;
+    height: 40px;
+    background-color: #ded71f;
+    position: relative;
+}
+
+.card .content.yellow .reverse .arrows .arrow:before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: inherit;
+    border-top-left-radius: 100%;
+    position: absolute;
+    left: -39px;
+}
+
+.card .content.yellow .reverse .arrows .arrow:after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    border: 40px solid #ded71f;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-right: none;
+    position: absolute;
+    right: -39px;
+    top: -20px;
+}
+
+.card .content.yellow .reverse .arrows .arrow:last-child {
+    transform: rotate(180deg);
+    top: 8px;
+    right: 53.33333333px;
+}
+
+.card .content.black .skip {
+    width: 80px;
+    height: 80px;
+    border: 16px solid black;
+    border-radius: 50%;
+    margin-top: 20%;
+}
+
+.card .content.black .skip:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 20%;
+    background-color: black;
+    position: relative;
+    top: 40%;
+    transform: rotate(-45deg);
+}
+
+.card .content.black .plus-two {
+    /* height: 100%; */
+    position: relative;
+}
+
+.card .content.black .plus-two:before,
+.card .content.black .plus-two:after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 80px;
+    background-color: black;
+    border-radius: 10%;
+    border: 5px solid white;
+    position: absolute;
+}
+
+.card .content.black .plus-two:before {
+    left: 35.0877193px;
+}
+
+.card .content.black .plus-two:after {
+    top: 50px;
+}
+
+.card .content.black .reverse {
+    height: 160px;
+    margin-top: -60%;
+    margin-left: 100%;
+}
+
+.card .content.black .reverse .arrows {
+    display: inline-block;
+    transform: rotate(-45deg);
+}
+
+.card .content.black .reverse .arrows .arrow {
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    position: relative;
+}
+
+.card .content.black .reverse .arrows .arrow:before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: inherit;
+    border-top-left-radius: 100%;
+    position: absolute;
+    left: -39px;
+}
+
+.card .content.black .reverse .arrows .arrow:after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    border: 40px solid black;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-right: none;
+    position: absolute;
+    right: -39px;
+    top: -20px;
+}
+
+.card .content.black .reverse .arrows .arrow:last-child {
+    transform: rotate(180deg);
+    top: 8px;
+    right: 53.33333333px;
+}
+
+.card .content .skip {
+    margin-left: -4%;
+}
+
+.card .content .wild {
+    margin: -100px 0 0 -37px;
+    background-color: white;
+    width: 145px;
+    height: 256px;
+    border-radius: 50%;
+    transform: skewX(-26deg);
+    overflow: hidden;
+    font-size: 0px;
+    border: 2px solid white
+}
+
+.card .content .wild .segment {
+    display: inline-block;
+    width: 68px;
+    height: 122px;
+}
+
+.card .content .wild .segment.red {
+    background-color: #c11f1f;
+}
+
+.card .content .wild .segment.green {
+    background-color: #3e9e32;
+}
+
+.card .content .wild .segment.yellow {
+    background-color: #ded71f;
+}
+
+.card .content .wild .segment.blue {
+    background-color: #3f4cff;
+}
+
+.card .small-content,
+.card .small-content-reverse {
+    position: absolute;
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+
+.card .small-content .skip,
+.card .small-content-reverse .skip {
+    width: 57.333333px;
+    height: 50.333333px;
+    border: 4.26666667px solid white;
+    border-radius: 50%;
+    margin-top: 2%;
+}
+
+.card .small-content .skip:before,
+.card .small-content-reverse .skip:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 20%;
+    background-color: white;
+    position: relative;
+    top: 40%;
+    transform: rotate(-45deg);
+}
+
+.card .small-content .reverse,
+.card .small-content-reverse .reverse {
+    height: 42.66666667px;
+    margin-top: -60%;
+    margin-left: 100%;
+}
+
+.card .small-content .reverse .arrows,
+.card .small-content-reverse .reverse .arrows {
+    display: inline-block;
+    transform: rotate(-45deg);
+}
+
+.card .small-content .reverse .arrows .arrow,
+.card .small-content-reverse .reverse .arrows .arrow {
+    width: 10.66666667px;
+    height: 10.66666667px;
+    background-color: white;
+    position: relative;
+}
+
+.card .small-content .reverse .arrows .arrow:before,
+.card .small-content-reverse .reverse .arrows .arrow:before {
+    content: "";
+    display: block;
+    width: 10.66666667px;
+    height: 10.66666667px;
+    background-color: inherit;
+    border-top-left-radius: 100%;
+    position: absolute;
+    left: -9.66666667px;
+}
+
+.card .small-content .reverse .arrows .arrow:after,
+.card .small-content-reverse .reverse .arrows .arrow:after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 0px;
+    border: 10.66666667px solid white;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-right: none;
+    position: absolute;
+    right: -9.66666667px;
+    top: -5.33333333px;
+}
+
+.card .small-content .reverse .arrows .arrow:last-child,
+.card .small-content-reverse .reverse .arrows .arrow:last-child {
+    transform: rotate(180deg);
+    top: 2.13333333px;
+    right: 14.22222222px;
+}
+
+.card .small-content .wild,
+.card .small-content-reverse .wild {
+    margin: -6.66666667px 0 0 -5.33333333px;
+    background-color: white;
+    width: 21.33333333px;
+    height: 34.66666667px;
+    border-radius: 50%;
+    transform: skewX(-25deg);
+    overflow: hidden;
+    font-size: 0px;
+    border: 2px solid white;
+}
+
+.card .small-content .wild .segment,
+.card .small-content-reverse .wild .segment {
+    display: inline-block;
+    width: 10.66666667px;
+    height: 17.33333333px;
+}
+
+.card .small-content .wild .segment.red,
+.card .small-content-reverse .wild .segment.red {
+    background-color: #c11f1f;
+}
+
+.card .small-content .wild .segment.green,
+.card .small-content-reverse .wild .segment.green {
+    background-color: #3e9e32;
+}
+
+.card .small-content .wild .segment.yellow,
+.card .small-content-reverse .wild .segment.yellow {
+    background-color: #ded71f;
+}
+
+.card .small-content .wild .segment.blue,
+.card .small-content-reverse .wild .segment.blue {
+    background-color: #3f4cff;
+}
+
+.card .small-content .wild,
+.card .small-content-reverse .wild {
+    margin: 0;
+    border: 1px solid white;
+}
+
+.card .small-content {
+    top: 5px;
+    left: 10px;
+}
+
+.card .small-content-reverse {
+    right: 10px;
+    bottom: 5px;
+    transform: rotate(180deg);
+}
+
+.plus-four {
+    /* background-color: transparent; */
+    width: 160px;
+    height: 260px;
+    position: relative;
+    margin: -84px 0 0 -41px;
+}
+
+.plus-four div[class^="card"] {
+    width: 50px;
+    height: 80px;
+    border-radius: 10%;
+    border: 5px solid white;
+    position: absolute;
+}
+
+.plus-four .card1 {
+    background-color: #3e9e32;
+    left: 5%;
+    top: 50%;
+}
+
+.plus-four .card2 {
+    background-color: #3f4cff;
+    top: 25%;
+    left: 25%;
+}
+
+.plus-four .card3 {
+    background-color: #c11f1f;
+    top: 35%;
+    left: 45%;
+}
+
+.plus-four .card4 {
+    background-color: #ded71f;
+    top: 10%;
+    left: 65%;
+}
